@@ -6,7 +6,79 @@ function preloadSupported() {
   return !!(relList && relList.supports && relList.supports('preload'));
 }
 //]]>
-</script><script async="" src="/js/modernizr-custom.js"></script><link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" /><link rel="stylesheet" type="text/css" href="/css/fontawesome.min.css" /><link rel="stylesheet" type="text/css" href="/css/fontawesome-brands.min.css" /><link rel="stylesheet" type="text/css" href="/css/fontawesome-solid.min.css" /></head><body><script src="/js/jquery-3.4.1.min.js"></script><script async="" src="/js/moment.min.js"></script><div class="container"><button type="button" class="btn btn-warning" style="height:100.0px;cursor:pointer;margin:20.0px;" onclick="var msg = new SpeechSynthesisUtterance(); msg.voice = speechSynthesis.getVoices()[2]; msg.text = 'Meow'; window.speechSynthesis.speak(msg);"><div><img src="images/cat2.png" style="width:50px;" /><div>Cat</div></div></button><button type="button" class="btn btn-warning" style="height:100.0px;cursor:pointer;margin:20.0px;" onclick="var msg = new SpeechSynthesisUtterance(); msg.voice = speechSynthesis.getVoices()[2]; msg.text = 'Woof'; window.speechSynthesis.speak(msg);"><div><img src="images/dog.png" style="width:50px;" /><div>Dog</div></div></button><button type="button" class="btn btn-warning" style="height:100.0px;cursor:pointer;margin:20.0px;" onclick="var msg = new SpeechSynthesisUtterance(); msg.voice = speechSynthesis.getVoices()[2]; msg.text = 'Ahoy matey'; window.speechSynthesis.speak(msg);"><div><img src="images/bird.png" style="width:50px;" /><div>Bird</div></div></button><button type="button" class="btn btn-warning" style="height:100.0px;cursor:pointer;margin:20.0px;" onclick="var msg = new SpeechSynthesisUtterance(); msg.voice = speechSynthesis.getVoices()[2]; msg.text = 'Wooooo oooo ooooo'; window.speechSynthesis.speak(msg);"><div><img src="images/gubgub.png" style="width:50px;" /><div>Gub Gub</div></div></button><button type="button" class="btn btn-warning" style="height:100.0px;cursor:pointer;margin:20.0px;" onclick="var msg = new SpeechSynthesisUtterance(); msg.voice = speechSynthesis.getVoices()[2]; msg.text = 'Meow'; window.speechSynthesis.speak(msg);"><div><img src="images/cat2.png" style="width:50px;" /><div>Cat</div></div></button><button type="button" class="btn btn-warning" style="height:100.0px;cursor:pointer;margin:20.0px;" onclick="var msg = new SpeechSynthesisUtterance(); msg.voice = speechSynthesis.getVoices()[2]; msg.text = 'Woof'; window.speechSynthesis.speak(msg);"><div><img src="images/dog.png" style="width:50px;" /><div>Dog</div></div></button><button type="button" class="btn btn-warning" style="height:100.0px;cursor:pointer;margin:20.0px;" onclick="var msg = new SpeechSynthesisUtterance(); msg.voice = speechSynthesis.getVoices()[2]; msg.text = 'Ahoy matey'; window.speechSynthesis.speak(msg);"><div><img src="images/bird.png" style="width:50px;" /><div>Bird</div></div></button><button type="button" class="btn btn-warning" style="height:100.0px;cursor:pointer;margin:20.0px;" onclick="var msg = new SpeechSynthesisUtterance(); msg.voice = speechSynthesis.getVoices()[2]; msg.text = 'Wooooo oooo ooooo'; window.speechSynthesis.speak(msg);"><div><img src="images/gubgub.png" style="width:50px;" /><div>Gub Gub</div></div></button><button type="button" class="btn btn-warning" style="height:100.0px;cursor:pointer;margin:20.0px;" onclick="var msg = new SpeechSynthesisUtterance(); msg.voice = speechSynthesis.getVoices()[2]; msg.text = 'Meow'; window.speechSynthesis.speak(msg);"><div><img src="images/cat2.png" style="width:50px;" /><div>Cat</div></div></button><button type="button" class="btn btn-warning" style="height:100.0px;cursor:pointer;margin:20.0px;" onclick="var msg = new SpeechSynthesisUtterance(); msg.voice = speechSynthesis.getVoices()[2]; msg.text = 'Woof'; window.speechSynthesis.speak(msg);"><div><img src="images/dog.png" style="width:50px;" /><div>Dog</div></div></button><button type="button" class="btn btn-warning" style="height:100.0px;cursor:pointer;margin:20.0px;" onclick="var msg = new SpeechSynthesisUtterance(); msg.voice = speechSynthesis.getVoices()[2]; msg.text = 'Ahoy matey'; window.speechSynthesis.speak(msg);"><div><img src="images/bird.png" style="width:50px;" /><div>Bird</div></div></button><button type="button" class="btn btn-warning" style="height:100.0px;cursor:pointer;margin:20.0px;" onclick="var msg = new SpeechSynthesisUtterance(); msg.voice = speechSynthesis.getVoices()[2]; msg.text = 'Wooooo oooo ooooo'; window.speechSynthesis.speak(msg);"><div><img src="images/gubgub.png" style="width:50px;" /><div>Gub Gub</div></div></button></div><script src="/js/bootstrap.bundle.min.js"></script><script>
+</script><script async="" src="/js/modernizr-custom.js"></script><link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" /><link rel="stylesheet" type="text/css" href="/css/fontawesome.min.css" /><link rel="stylesheet" type="text/css" href="/css/fontawesome-brands.min.css" /><link rel="stylesheet" type="text/css" href="/css/fontawesome-solid.min.css" /></head><body><script src="/js/jquery-3.4.1.min.js"></script><script async="" src="/js/moment.min.js"></script><div class="container"><div data-ns="ns355"><div id="ns355_target"></div></div><script>
+//<![CDATA[
+window.ns355_constructor = function(){
+window.ns355_addButton();
+
+
+}
+
+window.ns355_addButton = function(){
+var data =  [{text: "bird", say: "bird", img: "images/bird.png"}, 
+   {text: "dog", say: "dog",  img: "images/dog.png"}, 
+   {text: "cat", say: "cat",  img: "images/cat2.png"}] 
+
+ for(var i = 0; i < data.length; i++){ 
+    var injectButton =  function(target){ 
+    var element = document.implementation.createHTMLDocument() 
+    element.body.innerHTML =  "<button type=\"button\" class=\"btn btn-warning\" id=\"ns356_button\" style=\"height:100.0px;cursor:pointer;margin:20.0px;\" onclick=\"var msg = new SpeechSynthesisUtterance(); msg.voice = speechSynthesis.getVoices()[2]; msg.text = ''; window.speechSynthesis.speak(msg);\" data-ns=\"ns356\"><div><img id=\"ns356_img\" src=\"images/\" style=\"width:50px;\" /><div id=\"ns356_text\"></div></div></button><script>\n//<![CDATA[\nwindow.ns356_setText = function(s){\ndocument.querySelector( \"#ns356_text\" ).innerHTML = s;\n\n\n}\n\nwindow.ns356_setSpeech = function(s){\n$( \"#ns356_button\" ).attr(\"onclick\", \n     \"var msg = new SpeechSynthesisUtterance(); msg.voice = speechSynthesis.getVoices()[2]; msg.text = '\" + s + \"'; window.speechSynthesis.speak(msg);\" \n );\n\n\n}\n\nwindow.ns356_setImg = function(i){\n\n $( \"#ns356_img\" ).attr(\"src\", i);\n\n\n}\n\n\n//]]>\n</scri"+"pt>" 
+
+
+    var nonScripts = Array.from(element.body.querySelectorAll(':not(script)')) 
+    var nameSpaces = nonScripts.map((ns)=>ns.getAttribute("data-ns")).filter((i)=>i) 
+
+    //Now redo element with the right namespace 
+    //  Fixes the script tags too 
+
+    if(!window.namespaceMappingIndex){ 
+      window.namespaceMappingIndex = 0 
+    } 
+
+    window.namespaceMappingIndex += 1 
+
+    nameSpaces.map((ns)=>{ 
+                   var Nns = "N"+ window.namespaceMappingIndex + ns 
+                   element.body.innerHTML = element.body.innerHTML.replace(new RegExp(ns, "g"),Nns) 
+                   }) 
+
+    //Now that the enclosures are in the DOM, eval the scripts 
+
+    var scripts = Array.from(element.body.getElementsByTagName('script')).map((s)=>s.innerHTML) 
+
+
+    var e = element.body.children.item(0) //Should only be one, aside from the script 
+    var ret = target.appendChild(e) 
+
+    for (var n = 0; n < scripts.length; n++){ 
+      var s = scripts[n] 
+      eval(s) 
+    } 
+
+    return ret 
+ } ; 
+    var button = injectButton(document.querySelector( "#ns355_target" )); 
+    (function(){ 
+ var funName =   button  .getAttribute("data-ns") +  "_setText" 
+ return window[funName]( data[i].text ) 
+ })() ; 
+    (function(){ 
+ var funName =   button  .getAttribute("data-ns") +  "_setSpeech" 
+ return window[funName]( data[i].say ) 
+ })() ; 
+    (function(){ 
+ var funName =   button  .getAttribute("data-ns") +  "_setImg" 
+ return window[funName]( data[i].img ) 
+ })() ; 
+ };
+
+
+}
+
+window.ns355_dummy=window.ns355_constructor();
+
+//]]>
+</script></div><script src="/js/bootstrap.bundle.min.js"></script><script>
 //<![CDATA[
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
